@@ -3,7 +3,7 @@ import ContactCTA from '@/components/ContactCTA';
 import { Section } from '@/components/Section';
 import { Card } from '@/components/Card';
 import { Button } from '@/components/Button';
-import { AnimatedCounter } from '@/components/Animations';
+import { AnimatedCounter, FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 
 export default function DecouvrirPage() {
   return (
@@ -15,22 +15,30 @@ export default function DecouvrirPage() {
       <section className="relative min-h-[60vh] flex flex-col justify-center bg-navy pt-40 pb-20 z-0">
         <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
         <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
-          <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Qui sommes-nous</span>
-          <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
-            Modernisation de sécurité privé depuis 2023
-          </h1>
-          <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 mb-10 leading-relaxed">
-            G3S est un acteur de la sécurité privée dans le Grand Est. Nous combinons expertise humaine,
-            technologies de pointe et valeurs fortes pour garantir la protection de vos biens et de vos collaborateurs.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild variant="primary">
-              <Link href="/expertises">Nos expertises</Link>
-            </Button>
-            <Button asChild variant="outline" className="text-white border-white/30 hover:border-white hover:bg-white/10 hover:text-white">
-              <a href="#histoire">Notre histoire</a>
-            </Button>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Qui sommes-nous</span>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.2}>
+            <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
+              Modernisation de sécurité privé depuis 2023
+            </h1>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.3}>
+            <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 mb-10 leading-relaxed">
+              G3S est un acteur de la sécurité privée dans le Grand Est. Nous combinons expertise humaine,
+              technologies de pointe et valeurs fortes pour garantir la protection de vos biens et de vos collaborateurs.
+            </p>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.4}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild variant="primary">
+                <Link href="/expertises">Nos expertises</Link>
+              </Button>
+              <Button asChild variant="outline" className="text-white border-white/30 hover:border-white hover:bg-white/10 hover:text-white">
+                <a href="#histoire">Notre histoire</a>
+              </Button>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

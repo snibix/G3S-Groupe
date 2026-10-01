@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ContactCTA from '@/components/ContactCTA';
 import { Section } from '@/components/Section';
 import { Card } from '@/components/Card';
+import { FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
 
 export default function ExpertisesPage() {
   return (
@@ -14,38 +15,45 @@ export default function ExpertisesPage() {
       <section className="relative min-h-[60vh] flex flex-col justify-center bg-navy pt-40 pb-20 z-0">
         <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
         <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
-          <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Nos expertises</span>
-          <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
-            Cinq pôles d&apos;excellence au service de votre sécurité
-          </h1>
-          <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 mb-10 leading-relaxed">
-            G3S couvre l&apos;ensemble de la chaîne de valeur de la sécurité : électronique, humaine,
-            rapprochée, formation et solutions numériques. Chaque pôle est piloté par des experts dédiés.
-          </p>
+          <FadeIn direction="up" delay={0.1}>
+            <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Nos expertises</span>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.2}>
+            <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
+              Cinq pôles d&apos;excellence au service de votre sécurité
+            </h1>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.3}>
+            <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 mb-10 leading-relaxed">
+              G3S couvre l&apos;ensemble de la chaîne de valeur de la sécurité : électronique, humaine,
+              rapprochée, formation et solutions numériques. Chaque pôle est piloté par des experts dédiés.
+            </p>
+          </FadeIn>
 
-          {/* Navigation rapide */}
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <a href="#electronique" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-              <span className="h-2 w-2 rounded-full bg-brand"></span>
-              Sécurité Électronique
-            </a>
-            <a href="#privee" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-              <span className="h-2 w-2 rounded-full bg-sky"></span>
-              Sécurité Privée
-            </a>
-            <a href="#cpo" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-              <span className="h-2 w-2 rounded-full bg-mist"></span>
-              Protection Rapprochée
-            </a>
-            <a href="#formation" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-              <span className="h-2 w-2 rounded-full bg-muted"></span>
-              Formation
-            </a>
-            <a href="#numerique" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-              <span className="h-2 w-2 rounded-full bg-line"></span>
-              Solutions Numériques
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.4}>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a href="#electronique" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <span className="h-2 w-2 rounded-full bg-brand"></span>
+                Sécurité Électronique
+              </a>
+              <a href="#privee" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <span className="h-2 w-2 rounded-full bg-sky"></span>
+                Sécurité Privée
+              </a>
+              <a href="#cpo" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <span className="h-2 w-2 rounded-full bg-mist"></span>
+                Protection Rapprochée
+              </a>
+              <a href="#formation" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <span className="h-2 w-2 rounded-full bg-muted"></span>
+                Formation
+              </a>
+              <a href="#numerique" className="inline-flex items-center gap-2 rounded-full border border-line/20 bg-white/5 px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-brand/20 hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <span className="h-2 w-2 rounded-full bg-line"></span>
+                Solutions Numériques
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -55,7 +63,7 @@ export default function ExpertisesPage() {
       <Section id="electronique" variant="default">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
-          <div className="lg:col-span-5 relative">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/img-ajax.jpg"
@@ -65,10 +73,10 @@ export default function ExpertisesPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Content */}
-          <div className="lg:col-span-7 flex flex-col gap-6">
+          <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
               <div className="flex items-center gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">01</span>
@@ -126,7 +134,7 @@ export default function ExpertisesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -136,7 +144,7 @@ export default function ExpertisesPage() {
       <Section id="privee" variant="mist">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content (First on Desktop via order) */}
-          <div className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
               <div className="flex items-center gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">02</span>
@@ -194,10 +202,10 @@ export default function ExpertisesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Visual card (Second on desktop via order) */}
-          <div className="lg:col-span-5 relative lg:order-2 order-1">
+          <FadeIn direction="left" delay={0.3} className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/securite-privé.jpg"
@@ -207,7 +215,7 @@ export default function ExpertisesPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -217,7 +225,7 @@ export default function ExpertisesPage() {
       <Section id="cpo" variant="default">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
-          <div className="lg:col-span-5 relative">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/secu-privé.jpg"
@@ -227,10 +235,10 @@ export default function ExpertisesPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Content */}
-          <div className="lg:col-span-7 flex flex-col gap-6">
+          <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
             <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex items-center gap-4">
@@ -277,7 +285,7 @@ export default function ExpertisesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -287,7 +295,7 @@ export default function ExpertisesPage() {
       <Section id="formation" variant="mist">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content */}
-          <div className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
             <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex items-center gap-4">
@@ -335,10 +343,10 @@ export default function ExpertisesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Visual card */}
-          <div className="lg:col-span-5 relative lg:order-2 order-1">
+          <FadeIn direction="left" delay={0.3} className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/img-secu-formation.png"
@@ -348,7 +356,7 @@ export default function ExpertisesPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -358,7 +366,7 @@ export default function ExpertisesPage() {
       <Section id="numerique" variant="default">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
-          <div className="lg:col-span-5 relative">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/img-Solutions Numériques.png"
@@ -368,10 +376,10 @@ export default function ExpertisesPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Content */}
-          <div className="lg:col-span-7 flex flex-col gap-6">
+          <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
               <div className="flex items-center gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">05</span>
@@ -429,7 +437,7 @@ export default function ExpertisesPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -437,44 +445,54 @@ export default function ExpertisesPage() {
           PROCESSUS
       ══════════════════════════════════════════ */}
       <Section variant="mist">
-        <div className="mx-auto mb-16 max-w-[800px] text-center">
-          <span className="inline-block rounded-full bg-brand/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand mb-4">Notre méthode</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy mb-4">Comment nous travaillons</h2>
-          <p className="font-sans text-lg text-muted">
-            Un processus structuré en 4 étapes pour garantir une solution parfaitement adaptée à vos enjeux.
-          </p>
-        </div>
+        <FadeIn direction="up" delay={0.1}>
+          <div className="mx-auto mb-16 max-w-[800px] text-center">
+            <span className="inline-block rounded-full bg-brand/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand mb-4">Notre méthode</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy mb-4">Comment nous travaillons</h2>
+            <p className="font-sans text-lg text-muted">
+              Un processus structuré en 4 étapes pour garantir une solution parfaitement adaptée à vos enjeux.
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="relative overflow-hidden pt-12">
-            <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">1</div>
-            <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Audit &amp; Diagnostic</h3>
-            <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
-              Analyse complète de vos vulnérabilités, identification des risques et évaluation de votre dispositif existant.
-            </p>
-          </Card>
-          <Card className="relative overflow-hidden pt-12">
-            <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">2</div>
-            <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Préconisations</h3>
-            <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
-              Élaboration d&apos;un plan de sécurité sur mesure avec recommandations techniques et humaines adaptées à votre budget.
-            </p>
-          </Card>
-          <Card className="relative overflow-hidden pt-12">
-            <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">3</div>
-            <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Déploiement</h3>
-            <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
-              Mise en place du dispositif par nos équipes spécialisées, formation de vos collaborateurs et tests de validation.
-            </p>
-          </Card>
-          <Card className="relative overflow-hidden pt-12">
-            <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">4</div>
-            <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Suivi continu</h3>
-            <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
-              Reporting régulier, ajustements et amélioration continue du dispositif. Un interlocuteur dédié vous accompagne.
-            </p>
-          </Card>
-        </div>
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.15}>
+          <StaggerItem>
+            <Card className="relative overflow-hidden pt-12 h-full">
+              <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">1</div>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Audit &amp; Diagnostic</h3>
+              <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
+                Analyse complète de vos vulnérabilités, identification des risques et évaluation de votre dispositif existant.
+              </p>
+            </Card>
+          </StaggerItem>
+          <StaggerItem>
+            <Card className="relative overflow-hidden pt-12 h-full">
+              <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">2</div>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Préconisations</h3>
+              <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
+                Élaboration d&apos;un plan de sécurité sur mesure avec recommandations techniques et humaines adaptées à votre budget.
+              </p>
+            </Card>
+          </StaggerItem>
+          <StaggerItem>
+            <Card className="relative overflow-hidden pt-12 h-full">
+              <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">3</div>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Déploiement</h3>
+              <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
+                Mise en place du dispositif par nos équipes spécialisées, formation de vos collaborateurs et tests de validation.
+              </p>
+            </Card>
+          </StaggerItem>
+          <StaggerItem>
+            <Card className="relative overflow-hidden pt-12 h-full">
+              <div className="absolute -top-4 -right-4 font-display text-8xl font-bold text-line/40">4</div>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3 relative z-10">Suivi continu</h3>
+              <p className="font-sans text-sm text-muted leading-relaxed relative z-10">
+                Reporting régulier, ajustements et amélioration continue du dispositif. Un interlocuteur dédié vous accompagne.
+              </p>
+            </Card>
+          </StaggerItem>
+        </StaggerContainer>
       </Section>
 
       {/* ══════════════════════════════════════════
