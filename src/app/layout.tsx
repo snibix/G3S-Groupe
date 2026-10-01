@@ -2,10 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Geist } from "next/font/google";
+import { Barlow, Barlow_Condensed } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-sans',
+});
+
+const barlowCondensed = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-display',
+});
 
 export const metadata: Metadata = {
   title: "G3S Sécurité | Votre Partenaire en Protection et Gardiennage",
@@ -18,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={cn("font-sans", geist.variable)}>
+    <html lang="fr" className={cn("font-sans", barlow.variable, barlowCondensed.variable)}>
       <body>
         <Header />
         <div style={{ flex: 1 }}>

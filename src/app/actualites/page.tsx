@@ -1,6 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import { Section } from '@/components/Section';
+import { Card } from '@/components/Card';
+import { Button } from '@/components/Button';
 
 const articles = [
   {
@@ -83,91 +86,89 @@ export default function ActualitesPage() {
     <main>
 
       {/* Hero */}
-      <section className="actu-hero">
-        <div className="section-container">
-          <span className="section-tag">Actualités</span>
-          <h1 className="actu-hero-title">Restez informé</h1>
-          <p className="actu-hero-desc">
+      <section className="bg-navy pt-40 pb-20 text-center relative z-0">
+        <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
+        <div className="mx-auto max-w-[800px] px-6">
+          <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Actualités</span>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">Restez informé</h1>
+          <p className="font-sans text-lg text-mist/80 leading-relaxed">
             Suivez les dernières nouvelles de G3S, les évolutions du secteur de la sécurité privée et nos conseils d&apos;experts.
           </p>
         </div>
       </section>
 
       {/* Articles à la une */}
-      <section className="actu-section">
-        <div className="section-container">
-          <h2 className="actu-section-title">À la une</h2>
-          <div className="actu-featured-grid">
+      <Section variant="mist">
+        <div className="mx-auto mb-12 max-w-[1200px]">
+          <h2 className="font-display text-3xl font-bold uppercase text-navy border-b-2 border-line pb-4 mb-8">À la une</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featured.map((article) => (
-              <article key={article.id} className="actu-card actu-card-featured">
-                <div className="actu-card-img" style={{ background: `linear-gradient(135deg, ${categoryColors[article.category]}22, ${categoryColors[article.category]}11)` }}>
-                  <span className="actu-card-category" style={{ background: categoryColors[article.category] }}>
+              <a key={article.id} href="#" className="group flex flex-col rounded-xl overflow-hidden bg-white shadow-sm border border-line transition-all hover:-translate-y-1 hover:shadow-lg hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <div className="h-48 w-full relative flex items-start justify-end p-4" style={{ background: `linear-gradient(135deg, ${categoryColors[article.category]}22, ${categoryColors[article.category]}11)` }}>
+                  <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-white rounded shadow-sm" style={{ backgroundColor: categoryColors[article.category] }}>
                     {article.category}
                   </span>
                 </div>
-                <div className="actu-card-body">
-                  <time className="actu-card-date">{article.date}</time>
-                  <h3 className="actu-card-title">{article.title}</h3>
-                  <p className="actu-card-excerpt">{article.excerpt}</p>
-                  <span className="actu-card-link">
+                <div className="p-6 flex flex-col flex-1">
+                  <time className="font-sans text-xs font-semibold text-muted uppercase tracking-wider mb-3 block">{article.date}</time>
+                  <h3 className="font-display text-xl font-bold text-navy mb-3 group-hover:text-brand transition-colors">{article.title}</h3>
+                  <p className="font-sans text-sm text-muted mb-6 flex-1">{article.excerpt}</p>
+                  <span className="inline-flex items-center gap-2 font-sans text-sm font-bold text-brand mt-auto">
                     Lire l&apos;article
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    <svg className="transition-transform group-hover:translate-x-1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                   </span>
                 </div>
-              </article>
+              </a>
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Tous les articles */}
-      <section className="actu-section actu-section-alt">
-        <div className="section-container">
-          <h2 className="actu-section-title">Toutes nos actualités</h2>
-          <div className="actu-list-grid">
+      <Section variant="default">
+        <div className="mx-auto max-w-[1200px]">
+          <h2 className="font-display text-3xl font-bold uppercase text-navy border-b-2 border-line pb-4 mb-8">Toutes nos actualités</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {others.map((article) => (
-              <article key={article.id} className="actu-card">
-                <div className="actu-card-body">
-                  <div className="actu-card-meta">
-                    <span className="actu-card-category-inline" style={{ color: categoryColors[article.category] }}>
-                      {article.category}
-                    </span>
-                    <span className="actu-card-date-sep">•</span>
-                    <time className="actu-card-date">{article.date}</time>
-                  </div>
-                  <h3 className="actu-card-title">{article.title}</h3>
-                  <p className="actu-card-excerpt">{article.excerpt}</p>
-                  <span className="actu-card-link">
-                    Lire l&apos;article
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <a key={article.id} href="#" className="group flex flex-col rounded-xl bg-white p-6 shadow-sm border border-line transition-all hover:-translate-y-1 hover:shadow-md hover:border-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <div className="flex items-center gap-3 mb-3 font-sans text-xs font-semibold uppercase tracking-wider">
+                  <span style={{ color: categoryColors[article.category] }}>
+                    {article.category}
                   </span>
+                  <span className="text-line">•</span>
+                  <time className="text-muted">{article.date}</time>
                 </div>
-              </article>
+                <h3 className="font-display text-xl font-bold text-navy mb-3 group-hover:text-brand transition-colors">{article.title}</h3>
+                <p className="font-sans text-sm text-muted mb-4">{article.excerpt}</p>
+                <span className="inline-flex items-center gap-2 font-sans text-sm font-bold text-brand mt-auto">
+                  Lire l&apos;article
+                  <svg className="transition-transform group-hover:translate-x-1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </span>
+              </a>
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Newsletter CTA */}
-      <section className="section-cta">
-        <div className="cta-container">
-          <div className="cta-content">
-            <h2 className="cta-title">Ne manquez aucune actualité</h2>
-            <p className="cta-desc">
-              Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, conseils sécurité et offres directement dans votre boîte mail.
-            </p>
-            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Votre adresse email"
-                className="newsletter-input"
-                required
-              />
-              <button type="submit" className="btn btn-primary newsletter-btn">
-                S&apos;inscrire
-              </button>
-            </form>
-          </div>
+      <section className="bg-navy py-20 text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-brand/10 bg-[url('/grid.svg')] bg-center opacity-20 z-0"></div>
+        <div className="mx-auto max-w-[600px] px-6 relative z-10">
+          <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-white mb-4">Ne manquez aucune actualité</h2>
+          <p className="font-sans text-lg text-mist/80 mb-8 leading-relaxed">
+            Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, conseils sécurité et offres directement dans votre boîte mail.
+          </p>
+          <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
+            <input
+              type="email"
+              placeholder="Votre adresse email"
+              className="flex-1 rounded border border-line/20 bg-white/10 px-4 py-3 font-sans text-white placeholder-white/50 backdrop-blur-sm transition-colors focus:border-brand focus:bg-white/20 focus:outline-none focus:ring-1 focus:ring-brand"
+              required
+            />
+            <Button variant="primary" type="submit" className="shrink-0">
+              S&apos;inscrire
+            </Button>
+          </form>
         </div>
       </section>
 
