@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ContactCTA from '@/components/ContactCTA';
 import { Section } from '@/components/Section';
 import { Card } from '@/components/Card';
@@ -55,15 +56,14 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-navy to-brand p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>
-                </svg>
-              </div>
-              <span className="font-display text-8xl font-bold opacity-20">01</span>
-              <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full border-[20px] border-white/5"></div>
-              <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full border-[15px] border-white/5"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/img-ajax.jpg" 
+                alt="Sécurité Électronique" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
 
@@ -186,15 +186,14 @@ export default function ExpertisesPage() {
           
           {/* Visual card (Second on desktop via order) */}
           <div className="lg:col-span-5 relative lg:order-2 order-1">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-gray-800 to-navy p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <span className="font-display text-8xl font-bold opacity-20">02</span>
-              <div className="absolute -right-8 -bottom-8 h-40 w-40 rounded-full border-[20px] border-white/5"></div>
-              <div className="absolute top-10 -left-10 h-32 w-32 rounded-full border-[15px] border-white/5"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/securite-privé.jpg" 
+                alt="Sécurité Privée" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -207,14 +206,14 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-brand to-sky p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                </svg>
-              </div>
-              <span className="font-display text-8xl font-bold opacity-20">03</span>
-              <div className="absolute -left-10 -bottom-10 h-48 w-48 rounded-full border-[24px] border-white/10"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/secu-privé.jpg" 
+                alt="Protection Rapprochée" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
 
@@ -329,14 +328,14 @@ export default function ExpertisesPage() {
           
           {/* Visual card */}
           <div className="lg:col-span-5 relative lg:order-2 order-1">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-gray-700 to-gray-900 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                </svg>
-              </div>
-              <span className="font-display text-8xl font-bold opacity-20">04</span>
-              <div className="absolute right-0 top-1/2 h-32 w-32 -translate-y-1/2 translate-x-1/2 rotate-45 border-[16px] border-white/5"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/formation-ssiap.jpg" 
+                alt="Formation Professionnelle" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -349,14 +348,14 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Visual card */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-blue-900 to-indigo-900 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-                </svg>
-              </div>
-              <span className="font-display text-8xl font-bold opacity-20">05</span>
-              <div className="absolute left-0 top-0 h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/img-Solutions Numériques.jpg" 
+                alt="Solutions Numériques" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
 
