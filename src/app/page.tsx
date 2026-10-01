@@ -51,7 +51,7 @@ export default function Home() {
         <StaggerContainer className="mx-auto flex max-w-[1000px] flex-wrap items-center justify-center gap-8 md:gap-12 px-6">
           <StaggerItem className="flex flex-col items-center gap-2 min-w-[120px]">
             <span className="font-display text-4xl md:text-5xl font-bold text-white">
-              <AnimatedCounter target={5} prefix="+" duration={2} />
+              <AnimatedCounter target={4} prefix="+" duration={2} />
             </span>
             <span className="font-sans text-sm font-medium text-white/70">Années d&apos;expérience</span>
           </StaggerItem>
@@ -60,7 +60,7 @@ export default function Home() {
 
           <StaggerItem className="flex flex-col items-center gap-2 min-w-[120px]">
             <span className="font-display text-4xl md:text-5xl font-bold text-white">
-              <AnimatedCounter target={10} suffix="+" duration={2.5} />
+              <AnimatedCounter target={50} suffix="+" duration={2.5} />
             </span>
             <span className="font-sans text-sm font-medium text-white/70">Agents d'intervention spécialisés</span>
           </StaggerItem>
@@ -69,7 +69,7 @@ export default function Home() {
 
           <StaggerItem className="flex flex-col items-center gap-2 min-w-[120px]">
             <span className="font-display text-4xl md:text-5xl font-bold text-white">
-              <AnimatedCounter target={200} suffix="+" duration={3} />
+              <AnimatedCounter target={290} suffix="+" duration={3} />
             </span>
             <span className="font-sans text-sm font-medium text-white/70">Sites sécurisés</span>
           </StaggerItem>
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="hidden h-12 w-[1px] bg-white/20 sm:block"></div>
 
           <StaggerItem className="flex flex-col items-center gap-2 min-w-[120px]">
-            <span className="font-display text-4xl md:text-5xl font-bold text-white">24/7</span>
+            <span className="font-display text-4xl md:text-5xl font-bold text-white">6/7j</span>
             <span className="font-sans text-sm font-medium text-white/70">Disponibilité</span>
           </StaggerItem>
         </StaggerContainer>
@@ -108,11 +108,20 @@ export default function Home() {
           </StaggerItem>
 
           <StaggerItem>
-            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>} className="h-full">
+            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>} className="h-full flex flex-col">
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2">Réactivité 24/7</h3>
-              <p className="font-sans text-sm text-muted leading-relaxed">
-                Notre PC de sécurité et nos équipes mobiles sont opérationnels jour et nuit pour une intervention immédiate en cas d&apos;urgence.
+              <p className="font-sans text-sm text-muted leading-relaxed mb-4">
+                Le PC de sécurité de notre partenaire <span className="font-semibold text-navy">5 sur 5 Sécurité</span> coordonne les opérations pour une intervention immédiate en cas d&apos;urgence.
               </p>
+              <div className="mt-auto pt-4 border-t border-line flex items-center gap-3">
+                <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded bg-white overflow-hidden border border-line">
+                  <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-full w-full object-contain p-1" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs font-bold text-navy">5 sur 5 Sécurité</span>
+                  <span className="text-[10px] text-muted uppercase tracking-wider">Partenaire opérationnel</span>
+                </div>
+              </div>
             </Card>
           </StaggerItem>
 
@@ -153,25 +162,12 @@ export default function Home() {
         <StaggerContainer className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.1}>
 
           <StaggerItem className="md:col-span-2 lg:col-span-2">
-            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>} className="h-full border-t-4 border-t-brand">
-              <h3 className="font-display text-2xl font-bold uppercase text-navy mb-3">Gardiennage & Accueil</h3>
+            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" /></svg>} className="h-full border-t-4 border-t-brand">
+              <h3 className="font-display text-2xl font-bold uppercase text-navy mb-3">Installation système de sécurité électronique</h3>
               <p className="font-sans text-base text-muted leading-relaxed mb-6 flex-1">
-                Sécurisation de vos sites par la présence dissuasive et professionnelle de nos agents qualifiés. Contrôle d&apos;accès, rondes et filtrage.
+                Installation et maintenance de vidéosurveillance, contrôle d&apos;accès et alarmes anti-intrusion.
               </p>
               <Link href="/expertises" className="inline-flex items-center gap-2 font-sans text-sm font-semibold text-brand hover:text-navy transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">
-                En savoir plus
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
-              </Link>
-            </Card>
-          </StaggerItem>
-
-          <StaggerItem>
-            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" /></svg>} className="h-full">
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Télésurveillance</h3>
-              <p className="font-sans text-sm text-muted leading-relaxed mb-6 flex-1">
-                Systèmes de vidéosurveillance de pointe couplés à une équipe d&apos;intervention rapide, 24h/24.
-              </p>
-              <Link href="/expertises" className="inline-flex items-center gap-2 font-sans text-sm font-semibold text-brand hover:text-navy transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded mt-auto">
                 En savoir plus
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </Link>
@@ -192,10 +188,23 @@ export default function Home() {
           </StaggerItem>
 
           <StaggerItem>
-            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>} className="h-full">
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Sécurité Événementielle</h3>
+            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>} className="h-full">
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Sécurité Privée</h3>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6 flex-1">
-                Dispositifs de sécurité pour vos événements : concerts, salons, manifestations sportives et culturelles.
+                Sécurisation de vos sites par la présence dissuasive et professionnelle de nos agents qualifiés. Gardiennage, contrôle d&apos;accès, rondes et filtrage.
+              </p>
+              <Link href="/expertises" className="inline-flex items-center gap-2 font-sans text-sm font-semibold text-brand hover:text-navy transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded mt-auto">
+                En savoir plus
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+              </Link>
+            </Card>
+          </StaggerItem>
+
+          <StaggerItem>
+            <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>} className="h-full">
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Formation</h3>
+              <p className="font-sans text-sm text-muted leading-relaxed mb-6 flex-1">
+                Centre de formation pour adultes spécialisé dans les métiers de la sécurité : SST, SSIAP, CQP et autres habilitations.
               </p>
               <Link href="/expertises" className="inline-flex items-center gap-2 font-sans text-sm font-semibold text-brand hover:text-navy transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded mt-auto">
                 En savoir plus
@@ -206,7 +215,7 @@ export default function Home() {
 
           <StaggerItem>
             <Card icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg>} className="h-full">
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Audit & Conseil</h3>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Audit et Conseils</h3>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6 flex-1">
                 Analyse complète de vos risques et recommandations personnalisées pour optimiser votre dispositif de sûreté.
               </p>

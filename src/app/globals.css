@@ -3,9 +3,9 @@
 @import "shadcn/tailwind.css";
 
 @theme {
-  --color-navy: #0A1E46;
-  --color-brand: #1D5FCC;
-  --color-sky: #5BA4F5;
+  --color-navy: #1e293b;
+  --color-brand: #334155;
+  --color-sky: #94a3b8;
   --color-mist: #F4F7FB;
   --color-line: #DCE4F0;
   --color-muted: #55657F;
@@ -18,18 +18,20 @@
 
 :root {
   /* Shadcn standard theme variables in HSL */
-  --background: #f5f6f8; /* Blanc cassé doux */
+  --background: #f5f6f8;
+  /* Blanc cassé doux */
   --foreground: 222 47% 11%;
   /* #0f172a - Dark slate */
 
-  --card: #f9fafb; /* Blanc cassé léger */
+  --card: #f9fafb;
+  /* Blanc cassé léger */
   --card-foreground: 222 47% 11%;
 
   --popover: 0 0% 100%;
   --popover-foreground: 222 47% 11%;
 
-  --primary: 226.5 70.7% 40.2%;
-  /* #1e40af - Base blue for buttons */
+  --primary: 217 33% 17%;
+  /* #1e293b - Slate 800 */
   --primary-foreground: 210 40% 98%;
   /* White text */
 

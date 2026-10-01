@@ -33,7 +33,7 @@ export default function SecteursPage() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image 
-                src="/img-logistique.jpg" 
+                src="/secteur/industrie-secu.jpg" 
                 alt="Industrie et Logistique" 
                 fill 
                 className="object-cover transition-transform hover:scale-105 duration-700" 
@@ -106,7 +106,7 @@ export default function SecteursPage() {
           <div className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image 
-                src="/img-bureaux.jpg" 
+                src="/secteur/bureau-secu.jpg" 
                 alt="Tertiaire et Bureaux" 
                 fill 
                 className="object-cover transition-transform hover:scale-105 duration-700" 
@@ -123,10 +123,14 @@ export default function SecteursPage() {
       <Section id="commerce" variant="default">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-500 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <span className="text-6xl">🛍️</span>
-              <span className="font-display text-8xl font-bold opacity-20">03</span>
-              <div className="absolute right-0 top-1/2 h-32 w-32 -translate-y-1/2 translate-x-1/2 rotate-45 border-[16px] border-white/10"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/secteur/supermarcher-secu.jpg" 
+                alt="Commerce et Grande Distribution" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-6">
@@ -192,10 +196,14 @@ export default function SecteursPage() {
             </ul>
           </div>
           <div className="lg:col-span-5 relative lg:order-2 order-1">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <span className="text-6xl">🏥</span>
-              <span className="font-display text-8xl font-bold opacity-20">04</span>
-              <div className="absolute left-0 top-0 h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)]"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/secteur/hopital-secu.jpg" 
+                alt="Santé et Établissements Publics" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -207,10 +215,14 @@ export default function SecteursPage() {
       <Section id="evenementiel" variant="default">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-orange-400 to-red-500 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <span className="text-6xl">🎪</span>
-              <span className="font-display text-8xl font-bold opacity-20">05</span>
-              <div className="absolute -right-8 -bottom-8 h-40 w-40 rounded-full border-[20px] border-white/10"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/secteur/secu-evenementiel.jpg" 
+                alt="Événementiel et Culture" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-6">
@@ -276,10 +288,14 @@ export default function SecteursPage() {
             </ul>
           </div>
           <div className="lg:col-span-5 relative lg:order-2 order-1">
-            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 p-8 text-white shadow-xl overflow-hidden flex flex-col justify-between">
-              <span className="text-6xl">🏡</span>
-              <span className="font-display text-8xl font-bold opacity-20">06</span>
-              <div className="absolute top-10 -left-10 h-32 w-32 rounded-full border-[15px] border-white/10"></div>
+            <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+              <Image 
+                src="/secteur/resident-secu.jpg" 
+                alt="Résidentiel et Luxe" 
+                fill 
+                className="object-cover transition-transform hover:scale-105 duration-700" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function Header() {
             </svg>
           </div>
           <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
-            G3S - Groupe
+            G3S-Groupe
           </span>
         </Link>
 
@@ -42,9 +42,9 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`rounded-md px-3 py-2 font-sans font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky ${pathname === link.href
-                      ? 'bg-brand/20 text-sky font-semibold'
-                      : 'text-mist hover:bg-brand/10 hover:text-sky'
+                  className={`rounded-md px-3 py-2 font-sans font-medium uppercase transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${pathname === link.href
+                    ? 'bg-white/20 text-white font-semibold'
+                    : 'text-mist hover:bg-white/10 hover:text-white'
                     }`}
                 >
                   {link.label}
@@ -85,9 +85,9 @@ export default function Header() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`block rounded-lg px-4 py-3 font-sans text-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky ${pathname === link.href
-                    ? 'bg-brand/20 text-sky font-semibold'
-                    : 'text-mist hover:bg-brand/10 hover:text-sky'
+                className={`block rounded-lg px-4 py-3 font-sans text-lg font-medium uppercase transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${pathname === link.href
+                  ? 'bg-white/20 text-white font-semibold'
+                  : 'text-mist hover:bg-white/10 hover:text-white'
                   }`}
                 onClick={() => setMenuOpen(false)}
               >

@@ -17,10 +17,10 @@ export default function DecouvrirPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
           <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Qui sommes-nous</span>
           <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
-            L&apos;excellence de la sécurité privée, depuis 2010
+            Modernisation de sécurité privé depuis 2023
           </h1>
           <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 mb-10 leading-relaxed">
-            G3S est un acteur majeur de la sécurité privée dans le Grand Est. Nous combinons expertise humaine,
+            G3S est un acteur de la sécurité privée dans le Grand Est. Nous combinons expertise humaine,
             technologies de pointe et valeurs fortes pour garantir la protection de vos biens et de vos collaborateurs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -37,35 +37,29 @@ export default function DecouvrirPage() {
       {/* ══════════════════════════════════════════
           CHIFFRES CLÉS — BANDEAU
       ══════════════════════════════════════════ */}
-      <section className="bg-brand py-12 text-white relative z-10 -mt-8 mx-6 md:mx-auto max-w-[1200px] rounded-2xl shadow-xl">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 divide-x divide-white/20 text-center">
+      <section className="bg-brand py-12 text-white relative z-10 -mt-8 mx-6 md:mx-auto max-w-[1000px] rounded-2xl shadow-xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 text-center md:divide-x divide-white/20">
           <div className="flex flex-col items-center">
             <span className="font-display text-4xl md:text-5xl font-bold mb-1">
-              <AnimatedCounter prefix="+" target={5} />
+              <AnimatedCounter prefix="+" target={4} />
             </span>
             <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Années d&apos;expérience</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="font-display text-4xl md:text-5xl font-bold mb-1">
-              <AnimatedCounter target={10} suffix="+" />
+              <AnimatedCounter target={50} suffix="+" />
             </span>
-            <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Agents d'intervention spécialisés</span>
+            <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Agents d'intervention</span>
           </div>
-          <div className="flex flex-col items-center col-span-2 md:col-span-1 border-t md:border-t-0 pt-6 md:pt-0 mt-6 md:mt-0 border-white/20 md:border-none">
+          <div className="flex flex-col items-center">
             <span className="font-display text-4xl md:text-5xl font-bold mb-1">
-              <AnimatedCounter target={200} suffix="+" />
+              <AnimatedCounter target={290} suffix="+" />
             </span>
             <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Sites sécurisés</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="font-display text-4xl md:text-5xl font-bold mb-1">24/7</span>
+            <span className="font-display text-4xl md:text-5xl font-bold mb-1">6/7j</span>
             <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Disponibilité</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="font-display text-4xl md:text-5xl font-bold mb-1">
-              <AnimatedCounter target={98} suffix="%" />
-            </span>
-            <span className="font-sans text-sm font-medium uppercase tracking-wide text-white/80">Clients satisfaits</span>
           </div>
         </div>
       </section>
@@ -88,10 +82,10 @@ export default function DecouvrirPage() {
               <div className="h-3 w-3 bg-white rounded-full"></div>
             </div>
             <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-              <span className="font-display text-3xl font-bold text-sky mb-2 block">2010</span>
+              <span className="font-display text-3xl font-bold text-sky mb-2 block">2023</span>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Création de G3S</h3>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                Fondation de la société à Forbach avec une équipe de 5 agents. Les premiers contrats de gardiennage sont signés avec des entreprises locales de Moselle-Est.
+                Fondation de la société avec une première équipe opérationnelle de 6 salariés.
               </p>
             </Card>
           </div>
@@ -101,10 +95,10 @@ export default function DecouvrirPage() {
               <div className="h-3 w-3 bg-white rounded-full"></div>
             </div>
             <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-              <span className="font-display text-3xl font-bold text-sky mb-2 block">2014</span>
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Expansion régionale</h3>
+              <span className="font-display text-3xl font-bold text-sky mb-2 block">2024 - 2025</span>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Expansion Régionale</h3>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                L&apos;effectif passe à 50 agents. G3S étend ses activités à l&apos;ensemble de la Moselle et commence à sécuriser des sites industriels majeurs.
+                Augmentation du chiffre d&apos;affaires jusqu&apos;à 2 millions d&apos;euros et forte présence à l&apos;échelle régionale et nationale.
               </p>
             </Card>
           </div>
@@ -114,10 +108,10 @@ export default function DecouvrirPage() {
               <div className="h-3 w-3 bg-white rounded-full"></div>
             </div>
             <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-              <span className="font-display text-3xl font-bold text-sky mb-2 block">2018</span>
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Diversification des services</h3>
+              <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Centre de Formations</h3>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                Lancement des activités de sécurité électronique et de télésurveillance. G3S obtient ses premières certifications ISO et APSAD.
+                Création de notre propre centre de formations pour adultes afin d&apos;assurer l&apos;excellence et la montée en compétence continue.
               </p>
             </Card>
           </div>
@@ -127,10 +121,10 @@ export default function DecouvrirPage() {
               <div className="h-3 w-3 bg-white rounded-full"></div>
             </div>
             <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-              <span className="font-display text-3xl font-bold text-sky mb-2 block">2021</span>
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Pôle Solutions Numériques</h3>
+              <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Renforcement des Équipes</h3>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                Création du pôle cybersécurité et développement web. G3S devient un acteur global de la sécurité, combinant protection physique et numérique.
+                Structuration interne avec le recrutement d&apos;une équipe commerciale, d&apos;un chef de groupe, d&apos;une directrice d&apos;exploitation et d&apos;un informaticien.
               </p>
             </Card>
           </div>
@@ -140,10 +134,10 @@ export default function DecouvrirPage() {
               <div className="h-3 w-3 bg-white rounded-full"></div>
             </div>
             <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-              <span className="font-display text-3xl font-bold text-sky mb-2 block">2025</span>
-              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Leader Grand Est</h3>
+              <span className="font-display text-3xl font-bold text-sky mb-2 block">2027 (À venir)</span>
+              <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Protection Rapprochée</h3>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                Avec plus de 200 agents et 500 sites sécurisés, G3S ouvre de nouveaux bureaux à Metz et Strasbourg et prépare le lancement de son centre de formation.
+                Agrandissement de nos activités avec le développement d&apos;une société spécialisée en protection rapprochée (CPO).
               </p>
             </Card>
           </div>
@@ -300,7 +294,7 @@ export default function DecouvrirPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+        <div className="flex flex-wrap justify-center gap-4 text-center [&>div]:flex-1 [&>div]:min-w-[140px] [&>div]:max-w-[180px]">
           <Card className="p-4 flex flex-col items-center justify-center gap-3">
             <div className="text-brand">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -317,15 +311,6 @@ export default function DecouvrirPage() {
               </svg>
             </div>
             <h3 className="font-display font-bold uppercase text-navy text-sm">APSAD</h3>
-          </Card>
-
-          <Card className="p-4 flex flex-col items-center justify-center gap-3">
-            <div className="text-brand">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
-            </div>
-            <h3 className="font-display font-bold uppercase text-navy text-sm">ISO 9001</h3>
           </Card>
 
           <Card className="p-4 flex flex-col items-center justify-center gap-3">
@@ -383,11 +368,11 @@ export default function DecouvrirPage() {
           <div className="relative">
             <Card className="p-8 bg-mist overflow-hidden relative">
               <div className="aspect-[4/3] rounded-lg shadow-sm border border-line overflow-hidden relative">
-                <iframe 
-                  src="https://maps.google.com/maps?q=2%20Rue%20des%20Charrons,%2057600%20Forbach&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                  className="absolute inset-0 w-full h-full border-0" 
-                  allowFullScreen={false} 
-                  loading="lazy" 
+                <iframe
+                  src="https://maps.google.com/maps?q=2%20Rue%20des%20Charrons,%2057600%20Forbach&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen={false}
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Carte Google Maps - Siège social G3S à Forbach"
                 ></iframe>
