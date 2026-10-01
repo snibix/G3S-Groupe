@@ -69,9 +69,15 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex items-center gap-4 border-b-2 border-line pb-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">01</span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Électronique</h2>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">01</span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Électronique</h2>
+              </div>
+              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
+                <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-sm text-center">5 sur 5 Sécurité</span>
+              </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
               Des technologies de pointe pour protéger vos infrastructures, installées et maintenues par nos experts certifiés.
@@ -131,9 +137,15 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content (First on Desktop via order) */}
           <div className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
-            <div className="flex items-center gap-4 border-b-2 border-line pb-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">02</span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Privée</h2>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">02</span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Privée</h2>
+              </div>
+              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
+                <img src="/logo/g3s-securite.jpeg" alt="G3S Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-sm text-center">G3S Sécurité</span>
+              </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
               Des agents qualifiés et expérimentés pour assurer la protection physique de vos biens, de vos collaborateurs et de vos événements.
@@ -219,12 +231,18 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 border-b-2 border-line pb-4">
-              <div className="flex items-center gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-sky/10 font-display text-xl font-bold text-sky">03</span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Protection Rapprochée</h2>
+            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex items-center gap-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-sky/10 font-display text-xl font-bold text-sky">03</span>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Protection Rapprochée</h2>
+                </div>
+                <span className="inline-block self-start sm:self-auto rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
-              <span className="inline-block self-start sm:self-auto rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
+              <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
+                <img src="/logo/g3s-close-protection.jpeg" alt="G3S Close Protection" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-sm text-center">G3S Close Protection</span>
+              </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
               Une offre dédiée à la protection des personnes, avec des agents spécialisés (CPO) formés aux plus hauts standards internationaux.
@@ -270,12 +288,17 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content */}
           <div className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 border-b-2 border-line pb-4">
-              <div className="flex items-center gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">04</span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Formation Professionnelle</h2>
+            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex items-center gap-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">04</span>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Formation Professionnelle</h2>
+                </div>
+                <span className="inline-block self-start sm:self-auto rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
-              <span className="inline-block self-start sm:self-auto rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
+              <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
+                <span className="font-sans font-bold text-navy text-sm opacity-60 italic text-center">G3S Formation</span>
+              </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
               Un centre de formation dédié aux métiers de la sécurité privée, avec des programmes conformes aux référentiels du CNAPS.
@@ -349,9 +372,15 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex items-center gap-4 border-b-2 border-line pb-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">05</span>
-              <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Solutions Numériques</h2>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">05</span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Solutions Numériques</h2>
+              </div>
+              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
+                <img src="/logo/jdw.jpg" alt="JD Web Studio" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-sm text-center">JD Web Studio</span>
+              </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
               Protection de vos systèmes d&apos;information et développement de plateformes web sécurisées pour piloter vos dispositifs.

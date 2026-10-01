@@ -16,7 +16,7 @@ export default function Home() {
         <div className="absolute inset-0 z-[-1] bg-[radial-gradient(ellipse_at_30%_20%,rgba(91,164,245,0.1)_0%,transparent_50%),radial-gradient(ellipse_at_70%_80%,rgba(29,95,204,0.05)_0%,transparent_50%)]"></div>
         <div className="relative mx-auto max-w-[800px] px-6 text-center">
           <FadeIn direction="up" delay={0.1}>
-            <span className="inline-block rounded-full bg-brand/10 px-5 py-2 text-sm font-semibold tracking-wider text-brand mb-8 uppercase">🛡️ Sécurité privée depuis 2010</span>
+            <span className="inline-block rounded-full bg-brand/10 px-5 py-2 text-sm font-semibold tracking-wider text-brand mb-8 uppercase">🛡️ Sécurité privée depuis 2023</span>
           </FadeIn>
 
           <FadeIn direction="up" delay={0.2}>
@@ -114,11 +114,9 @@ export default function Home() {
                 Le PC de sécurité de notre partenaire <span className="font-semibold text-navy">5 sur 5 Sécurité</span> coordonne les opérations pour une intervention immédiate en cas d&apos;urgence.
               </p>
               <div className="mt-auto pt-4 border-t border-line flex items-center gap-3">
-                <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded bg-white overflow-hidden border border-line">
-                  <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-full w-full object-contain p-1" />
-                </div>
+                <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-8 w-auto max-w-[80px] object-contain mix-blend-multiply" />
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-navy">5 sur 5 Sécurité</span>
+                  <span className="text-sm font-bold text-navy">5 sur 5 Sécurité</span>
                   <span className="text-[10px] text-muted uppercase tracking-wider">Partenaire opérationnel</span>
                 </div>
               </div>
