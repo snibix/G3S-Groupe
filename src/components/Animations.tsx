@@ -210,3 +210,32 @@ export function SlideIn({
     </motion.div>
   );
 }
+
+/* ═══════════════════════════════════════════════
+   TimelineCardAnim — Animation spécifique timeline
+   ═══════════════════════════════════════════════ */
+export function TimelineCardAnim({
+  children,
+  direction = 'left',
+  className = '',
+}: {
+  children: ReactNode;
+  direction?: 'left' | 'right';
+  className?: string;
+}) {
+  // direction 'left' : arrive depuis la gauche (x: -50 vers 0)
+  // direction 'right' : arrive depuis la droite (x: 50 vers 0)
+  const initialX = direction === 'left' ? -50 : 50;
+
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, x: initialX }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.4, margin: "0px 0px -10% 0px" }}
+      transition={{ duration: 0.6, ease: [0.25, 0.4, 0, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
+}

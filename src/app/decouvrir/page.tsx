@@ -3,7 +3,7 @@ import ContactCTA from '@/components/ContactCTA';
 import { Section } from '@/components/Section';
 import { Card } from '@/components/Card';
 import { Button } from '@/components/Button';
-import { AnimatedCounter, FadeIn, StaggerContainer, StaggerItem } from '@/components/Animations';
+import { AnimatedCounter, FadeIn, StaggerContainer, StaggerItem, TimelineCardAnim } from '@/components/Animations';
 
 export default function DecouvrirPage() {
   return (
@@ -87,70 +87,87 @@ export default function DecouvrirPage() {
         </FadeIn>
 
         <div className="max-w-4xl mx-auto relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-brand/20 before:via-brand before:to-brand/20">
-          <FadeIn direction="left" className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
+          
+          {/* CARTE 1 : Gauche (arrive depuis la gauche) */}
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="h-3 w-3 bg-white rounded-full"></div>
               </div>
-              <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-                <span className="font-display text-3xl font-bold text-sky mb-2 block">2023</span>
-                <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Création de G3S</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">
-                  Fondation de la société avec une première équipe opérationnelle de 6 salariés.
-                </p>
-              </Card>
-          </FadeIn>
+              <TimelineCardAnim direction="left" className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                <Card className="p-6">
+                  <span className="font-display text-3xl font-bold text-sky mb-2 block">2023</span>
+                  <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Création de G3S</h3>
+                  <p className="font-sans text-sm text-muted leading-relaxed">
+                    Fondation de la société avec une première équipe opérationnelle de 6 salariés.
+                  </p>
+                </Card>
+              </TimelineCardAnim>
+          </div>
 
-          <FadeIn direction="right" delay={0.1} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
+          {/* CARTE 2 : Droite (arrive depuis la droite) */}
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="h-3 w-3 bg-white rounded-full"></div>
               </div>
-              <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-                <span className="font-display text-3xl font-bold text-sky mb-2 block">2024 - 2025</span>
-                <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Expansion Régionale</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">
-                  Augmentation du chiffre d&apos;affaires jusqu&apos;à 2 millions d&apos;euros et forte présence à l&apos;échelle régionale et nationale.
-                </p>
-              </Card>
-          </FadeIn>
+              <TimelineCardAnim direction="right" className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                <Card className="p-6">
+                  <span className="font-display text-3xl font-bold text-sky mb-2 block">2024 - 2025</span>
+                  <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Expansion Régionale</h3>
+                  <p className="font-sans text-sm text-muted leading-relaxed">
+                    Augmentation du chiffre d&apos;affaires jusqu&apos;à 2 millions d&apos;euros et forte présence à l&apos;échelle régionale et nationale.
+                  </p>
+                </Card>
+              </TimelineCardAnim>
+          </div>
 
-          <FadeIn direction="left" delay={0.1} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
+          {/* CARTE 3 : Gauche (arrive depuis la gauche) */}
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="h-3 w-3 bg-white rounded-full"></div>
               </div>
-              <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-                <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
-                <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Centre de Formations</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">
-                  Création de notre propre centre de formations pour adultes afin d&apos;assurer l&apos;excellence et la montée en compétence continue.
-                </p>
-              </Card>
-          </FadeIn>
+              <TimelineCardAnim direction="left" className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                <Card className="p-6">
+                  <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
+                  <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Centre de Formations</h3>
+                  <p className="font-sans text-sm text-muted leading-relaxed">
+                    Création de notre propre centre de formations pour adultes afin d&apos;assurer l&apos;excellence et la montée en compétence continue.
+                  </p>
+                </Card>
+              </TimelineCardAnim>
+          </div>
 
-          <FadeIn direction="right" delay={0.1} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
+          {/* CARTE 4 : Droite (arrive depuis la droite) */}
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="h-3 w-3 bg-white rounded-full"></div>
               </div>
-              <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-                <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
-                <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Renforcement des Équipes</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">
-                  Structuration interne avec le recrutement d&apos;une équipe commerciale, d&apos;un chef de groupe, d&apos;une directrice d&apos;exploitation et d&apos;un informaticien.
-                </p>
-              </Card>
-          </FadeIn>
+              <TimelineCardAnim direction="right" className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                <Card className="p-6">
+                  <span className="font-display text-3xl font-bold text-sky mb-2 block">2026</span>
+                  <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Renforcement des Équipes</h3>
+                  <p className="font-sans text-sm text-muted leading-relaxed">
+                    Structuration interne avec le recrutement d&apos;une équipe commerciale, d&apos;un chef de groupe, d&apos;une directrice d&apos;exploitation et d&apos;un informaticien.
+                  </p>
+                </Card>
+              </TimelineCardAnim>
+          </div>
 
-          <FadeIn direction="left" delay={0.1} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
+          {/* CARTE 5 : Gauche (arrive depuis la gauche) */}
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-12 last:mb-0">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="h-3 w-3 bg-white rounded-full"></div>
               </div>
-              <Card className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6">
-                <span className="font-display text-3xl font-bold text-sky mb-2 block">2027 (À venir)</span>
-                <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Protection Rapprochée</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">
-                  Agrandissement de nos activités avec le développement d&apos;une société spécialisée en protection rapprochée (CPO).
-                </p>
-              </Card>
-          </FadeIn>
+              <TimelineCardAnim direction="left" className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                <Card className="p-6">
+                  <span className="font-display text-3xl font-bold text-sky mb-2 block">2027 (À venir)</span>
+                  <h3 className="font-display text-xl font-bold uppercase text-navy mb-3">Protection Rapprochée</h3>
+                  <p className="font-sans text-sm text-muted leading-relaxed">
+                    Agrandissement de nos activités avec le développement d&apos;une société spécialisée en protection rapprochée (CPO).
+                  </p>
+                </Card>
+              </TimelineCardAnim>
+          </div>
+
         </div>
       </Section>
 

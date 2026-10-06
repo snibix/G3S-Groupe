@@ -39,11 +39,11 @@ export default function SecteursPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <FadeIn direction="right" className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/industrie-secu.jpg" 
-                alt="Industrie et Logistique" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/secu-industrie.jpg"
+                alt="Industrie et Logistique"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -58,19 +58,19 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Gardiennage permanent et rondes de surveillance
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Contrôle d&apos;accès véhicules et personnel
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Vidéoprotection périmétrique et intérieure
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Sécurité incendie SSIAP sur zones SEVESO
               </li>
             </ul>
@@ -93,30 +93,30 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Agents d&apos;accueil et de filtrage qualifiés
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Contrôle d&apos;accès par badge et biométrie
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Gestion des flux visiteurs et livraisons
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Systèmes d&apos;alarme et télésurveillance
               </li>
             </ul>
           </FadeIn>
           <FadeIn direction="left" className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/bureau-secu.jpg" 
-                alt="Tertiaire et Bureaux" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/bureau-secu.jpg"
+                alt="Tertiaire et Bureaux"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -131,11 +131,11 @@ export default function SecteursPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <FadeIn direction="right" className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/supermarcher-secu.jpg" 
-                alt="Commerce et Grande Distribution" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/supermarcher-securite.jpg"
+                alt="Commerce et Grande Distribution"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -150,19 +150,19 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Agents de prévention vol et surveillance
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Vidéoprotection avec analyse intelligente
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Sécurisation des parkings et zones de livraison
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Intervention rapide en cas d&apos;incident
               </li>
             </ul>
@@ -185,30 +185,30 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Filtrage et contrôle d&apos;accès aux zones sensibles
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Rondes de sécurité et gestion des urgences
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Gestion des situations d&apos;agressivité
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Sécurité incendie conforme aux normes ERP
               </li>
             </ul>
           </FadeIn>
           <FadeIn direction="left" className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/hopital-secu.jpg" 
-                alt="Santé et Établissements Publics" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/secu-hopital.jpg"
+                alt="Santé et Établissements Publics"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -223,11 +223,11 @@ export default function SecteursPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <FadeIn direction="right" className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/secu-evenementiel.jpg" 
-                alt="Événementiel et Culture" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/secu-even.jpg"
+                alt="Événementiel et Culture"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -242,19 +242,19 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Étude de sûreté et plan de sécurité sur mesure
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Palpations de sécurité et contrôle des accès
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Gestion de la foule et des flux de personnes
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 PC de sécurité mobile et coordination terrain
               </li>
             </ul>
@@ -277,30 +277,30 @@ export default function SecteursPage() {
             </p>
             <ul className="flex flex-col gap-3 font-sans text-muted">
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Gardiennage résidentiel haut de gamme
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Vidéosurveillance discrète et intégrée
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Systèmes domotiques et alarme connectée
               </li>
               <li className="flex items-start gap-3">
-                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg className="shrink-0 mt-0.5 text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 Conciergerie sécurité et protection rapprochée
               </li>
             </ul>
           </FadeIn>
           <FadeIn direction="left" className="lg:col-span-5 relative lg:order-2 order-1">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <Image 
-                src="/secteur/resident-secu.jpg" 
-                alt="Résidentiel et Luxe" 
-                fill 
-                className="object-cover transition-transform hover:scale-105 duration-700" 
+              <Image
+                src="/secteur/secu-resident-luxe.jpg"
+                alt="Résidentiel et Luxe"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </div>
@@ -328,7 +328,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-2xl mb-4 group-hover:bg-slate-200 transition-colors">🏭</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Industrie &amp; Logistique
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Usines, entrepôts, zones SEVESO</p>
             </a>
@@ -339,7 +339,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-2xl mb-4 group-hover:bg-blue-100 transition-colors">🏢</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Tertiaire &amp; Bureaux
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Sièges sociaux, coworking</p>
             </a>
@@ -350,7 +350,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal-50 text-2xl mb-4 group-hover:bg-teal-100 transition-colors">🛍️</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Commerce &amp; Distribution
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Centres commerciaux, boutiques</p>
             </a>
@@ -361,7 +361,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-50 text-2xl mb-4 group-hover:bg-indigo-100 transition-colors">🏥</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Santé &amp; Public
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Hôpitaux, administrations, écoles</p>
             </a>
@@ -372,7 +372,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-50 text-2xl mb-4 group-hover:bg-orange-100 transition-colors">🎪</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Événementiel &amp; Culture
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Concerts, festivals, salons</p>
             </a>
@@ -383,7 +383,7 @@ export default function SecteursPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-50 text-2xl mb-4 group-hover:bg-amber-100 transition-colors">🏡</div>
               <h3 className="font-display text-xl font-bold uppercase text-navy mb-2 flex items-center justify-between">
                 Résidentiel &amp; Luxe
-                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg className="text-brand opacity-0 group-hover:opacity-100 transition-opacity" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </h3>
               <p className="font-sans text-sm text-muted">Propriétés privées, retail luxe</p>
             </a>
@@ -405,7 +405,7 @@ export default function SecteursPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <ContactCTA />
               <a href="tel:0356990900" className="inline-flex items-center justify-center gap-2 rounded px-6 py-3 font-sans font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                 03 56 99 09 00
               </a>
             </div>

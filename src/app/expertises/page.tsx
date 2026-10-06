@@ -369,7 +369,7 @@ export default function ExpertisesPage() {
           <FadeIn direction="right" delay={0.2} className="lg:col-span-5 relative">
             <div className="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/img-Solutions Numériques.png"
+                src="/solution-num.jpg"
                 alt="Solutions Numériques"
                 fill
                 className="object-cover transition-transform hover:scale-105 duration-700"

@@ -7,16 +7,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
           <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-2xl font-bold uppercase tracking-wider text-white leading-none">G3S</span>
-                <span className="text-[10px] font-semibold uppercase tracking-widest text-white/80 mt-1 leading-none">Groupe</span>
-              </div>
+            <div className="flex items-center">
+              <Link href="/" className="flex items-center gap-3 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+                <img 
+                  src="/logo/logo-g3s-groupe.jpg" 
+                  alt="G3S Groupe Logo" 
+                  className="h-10 w-auto rounded-md shadow-sm"
+                />
+                <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
+                  G3S-Groupe
+                </span>
+              </Link>
             </div>
             <p className="text-sm text-mist/80 leading-relaxed">
               L&apos;excellence de la sécurité privée dans le Grand Est. Nous protégeons vos biens et vos collaborateurs avec rigueur et professionnalisme depuis 2023.
