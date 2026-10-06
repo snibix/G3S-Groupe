@@ -84,7 +84,7 @@ export default function Header() {
         className={`overflow-hidden border-t border-white/10 bg-navy px-4 md:px-6 transition-all duration-300 ease-in-out md:hidden ${menuOpen ? 'max-h-[500px] py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
           }`}
       >
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 text-center">
           {links.map((link) => (
             <li key={link.href}>
               <Link
