@@ -93,8 +93,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-line/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-mist/50">
+        <div className="border-t border-line/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-mist/50">
           <p>&copy; {new Date().getFullYear()} G3S Sécurité. Tous droits réservés.</p>
+          
+          <div className="flex items-center gap-2">
+            <span>Site fait par</span>
+            <a href="https://jd-web-studio.fr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">
+              <img src="/logo/jdw.jpg" alt="JD Web Studio" className="h-5 w-auto rounded-sm object-contain" />
+              <span className="font-semibold text-white/80">JD-Web-Studio</span>
+            </a>
+          </div>
+
           <div className="flex items-center gap-3">
             <Link href="/mentions-legales" className="hover:text-mist transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">Mentions Légales</Link>
             <span>•</span>

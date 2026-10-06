@@ -14,7 +14,6 @@
   --font-sans: "Barlow", sans-serif;
 }
 
-@custom-variant dark (&:is(.dark *));
 
 :root {
   /* Shadcn standard theme variables in HSL */
