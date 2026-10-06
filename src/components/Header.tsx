@@ -18,15 +18,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-navy text-white shadow-md transition-all duration-300">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-md transition-all duration-300">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-3 md:px-6 md:py-4">
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded"
           onClick={() => setMenuOpen(false)}
         >
-          <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg shadow-lg">
+          <div className="relative h-9 w-9 md:h-10 md:w-10 shrink-0 overflow-hidden rounded-lg shadow-lg">
             <Image
               src="/logo/logo-g3s-groupe.jpg"
               alt="G3S Groupe Logo"
@@ -34,7 +34,7 @@ export default function Header() {
               className="object-cover"
             />
           </div>
-          <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
+          <span className="font-display text-base sm:text-lg md:text-2xl font-bold uppercase tracking-wider text-white truncate">
             G3S-Groupe
           </span>
         </Link>
@@ -81,7 +81,7 @@ export default function Header() {
 
       {/* Mobile Nav Panel */}
       <div
-        className={`overflow-hidden border-t border-white/10 bg-navy px-6 transition-all duration-300 ease-in-out md:hidden ${menuOpen ? 'max-h-[500px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'
+        className={`overflow-hidden border-t border-white/10 bg-navy px-4 md:px-6 transition-all duration-300 ease-in-out md:hidden ${menuOpen ? 'max-h-[500px] py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
           }`}
       >
         <ul className="flex flex-col gap-2">

@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={cn("font-sans", barlow.variable, barlowCondensed.variable)}>
-      <body>
+    <html lang="fr" className={cn("font-sans overflow-x-hidden w-full", barlow.variable, barlowCondensed.variable)}>
+      <body className="overflow-x-hidden w-full flex flex-col min-h-screen">
         <Header />
         <div style={{ flex: 1 }}>
           {children}
