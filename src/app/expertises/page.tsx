@@ -20,7 +20,7 @@ export default function ExpertisesPage() {
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
             <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">
-              Cinq pôles d&apos;excellence au service de votre sécurité
+              5 pôles d&apos;excellence au service de votre sécurité
             </h1>
           </FadeIn>
           <FadeIn direction="up" delay={0.3}>
@@ -151,8 +151,8 @@ export default function ExpertisesPage() {
                 <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Privée</h2>
               </div>
               <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
-                <img src="/logo/g3s-securite.jpeg" alt="G3S Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-                <span className="font-sans font-bold text-navy text-sm text-center">G3S Sécurité</span>
+                <img src="/logo/security.jpeg" alt="G3S Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -248,8 +248,8 @@ export default function ExpertisesPage() {
                 <span className="inline-block self-start sm:self-auto rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
               <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
-                <img src="/logo/g3s-close-protection.jpeg" alt="G3S Close Protection" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-                <span className="font-sans font-bold text-navy text-sm text-center">G3S Close Protection</span>
+                <img src="/logo/protection.jpeg" alt="G3S Close Protection" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -305,7 +305,7 @@ export default function ExpertisesPage() {
                 <span className="inline-block self-start sm:self-auto rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
               <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
-                <span className="font-sans font-bold text-navy text-sm opacity-60 italic text-center">G3S Formation</span>
+                <img src="/logo/academy.jpeg" alt="G3S Formation" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -326,8 +326,6 @@ export default function ExpertisesPage() {
                   </p>
                 </div>
               </div>
-
-
 
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-navy shadow-sm">
@@ -507,9 +505,9 @@ export default function ExpertisesPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <ContactCTA />
-            <a href="tel:0356990900" className="inline-flex items-center justify-center gap-2 rounded px-6 py-3 font-sans font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
+            <a href="tel:0685641267" className="inline-flex items-center justify-center gap-2 rounded px-6 py-3 font-sans font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-              03 56 99 09 00
+              06 85 64 12 67
             </a>
           </div>
         </div>

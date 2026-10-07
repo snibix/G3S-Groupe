@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="flex flex-col gap-6 items-center text-center md:items-start md:text-left">
             <div className="flex items-center justify-center md:justify-start">
               <Link href="/" className="flex items-center gap-3 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
-                <img 
-                  src="/logo/logo-g3s-groupe.jpg" 
-                  alt="G3S Groupe Logo" 
+                <img
+                  src="/logo/logo-g3s-groupe.jpg"
+                  alt="G3S Groupe Logo"
                   className="h-10 w-auto rounded-md shadow-sm"
                 />
                 <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
@@ -66,9 +66,31 @@ export default function Footer() {
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-white/20 text-white md:mt-0.5">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                 </div>
-                <div className="flex flex-col items-center md:items-start">
-                  <span className="text-[10px] font-semibold uppercase tracking-wider text-mist/50 mb-0.5">Téléphone</span>
-                  <a href="tel:0356990900" className="text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">03 56 99 09 00</a>
+                <div className="flex flex-col items-center md:items-start gap-4">
+                  <div className="flex flex-col items-center md:items-start">
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-mist/50 mb-0.5">Administratif</span>
+                    <a href="tel:0686099424" className="flex items-center gap-1.5 text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">
+                      06 86 09 94 24
+                    </a>
+                  </div>
+
+                  <div className="flex flex-col items-center md:items-start">
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-mist/50 mb-1 border-b border-mist/20 pb-0.5">Sécurité Privée</span>
+                    <div className="flex flex-col items-center md:items-start gap-2 mt-1">
+                      <div className="flex flex-col items-center md:items-start">
+                        <span className="text-[10px] font-medium tracking-wider text-mist/40 mb-0.5">Directrice d'exploitation</span>
+                        <a href="tel:0685641267" className="flex items-center gap-1.5 text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">
+                          06 85 64 12 67
+                        </a>
+                      </div>
+                      <div className="flex flex-col items-center md:items-start">
+                        <span className="text-[10px] font-medium tracking-wider text-mist/40 mb-0.5">Consultant Sécurité Privée</span>
+                        <a href="tel:0607540600" className="flex items-center gap-1.5 text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">
+                          06 07 54 06 00
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
@@ -77,7 +99,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-center md:items-start">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-mist/50 mb-0.5">Email</span>
-                  <a href="mailto:contact@g3s-securite.fr" className="text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">contact@g3s-securite.fr</a>
+                  <a href="mailto:contact@g3s-protection.fr" className="text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">contact@g3s-protection.fr</a>
                 </div>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
@@ -96,7 +118,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-line/10 pt-8 flex flex-col md:flex-row justify-between items-center text-center gap-6 text-xs text-mist/50">
           <p>&copy; {new Date().getFullYear()} G3S Sécurité. Tous droits réservés.</p>
-          
+
           <div className="flex flex-col md:flex-row items-center gap-2">
             <span>Site fait par</span>
             <a href="https://jd-web-studio.fr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">
