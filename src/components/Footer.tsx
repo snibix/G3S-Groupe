@@ -12,7 +12,7 @@ export default function Footer() {
                 <img
                   src="/logo/g3s-groupe.jpg"
                   alt="G3S Groupe Logo"
-                  className="h-10 w-auto rounded-md shadow-sm"
+                  className="h-15 w-auto rounded-md shadow-sm"
                 />
 
               </Link>

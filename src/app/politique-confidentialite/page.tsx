@@ -2,7 +2,7 @@ export default function PolitiqueConfidentialitePage() {
   return (
     <main>
       <section className="relative min-h-[40vh] flex flex-col justify-center bg-navy pt-40 pb-20 z-0">
-        <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
+
         <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
           <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">
             Données

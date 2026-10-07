@@ -13,7 +13,7 @@ export default function ExpertisesPage() {
           HERO
       ══════════════════════════════════════════ */}
       <section className="relative min-h-[60vh] flex flex-col justify-center bg-navy pt-40 pb-20 z-0">
-        <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
+
         <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
           <FadeIn direction="up" delay={0.1}>
             <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Nos expertises</span>
@@ -69,6 +69,7 @@ export default function ExpertisesPage() {
                 src="/img-ajax.jpg"
                 alt="Sécurité Électronique"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
@@ -210,6 +211,7 @@ export default function ExpertisesPage() {
                 src="/securite-privé.jpg"
                 alt="Sécurité Privée"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
@@ -230,6 +232,7 @@ export default function ExpertisesPage() {
                 src="/secu-privé.jpg"
                 alt="Protection Rapprochée"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
@@ -350,6 +353,7 @@ export default function ExpertisesPage() {
                 src="/img-secu-formation.png"
                 alt="Formation Professionnelle"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
@@ -370,6 +374,7 @@ export default function ExpertisesPage() {
                 src="/solution-num.jpg"
                 alt="Solutions Numériques"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform hover:scale-105 duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>

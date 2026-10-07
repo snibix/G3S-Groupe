@@ -10,7 +10,7 @@ export default function ActualitesPage() {
 
       {/* Hero */}
       <section className="bg-navy pt-40 pb-20 text-center relative z-0">
-        <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
+
         <div className="mx-auto max-w-[800px] px-6">
           <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">Actualités</span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white mb-6">Restez informé</h1>
