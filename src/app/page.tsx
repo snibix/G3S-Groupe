@@ -5,6 +5,7 @@ import { Button } from '@/components/Button';
 import { Section } from '@/components/Section';
 import { Card } from '@/components/Card';
 
+
 export default function Home() {
   return (
     <main className="pt-20">
@@ -12,8 +13,11 @@ export default function Home() {
       {/* ══════════════════════════════════════════
           HERO
       ══════════════════════════════════════════ */}
-      <section className="relative min-h-[90vh] flex items-center justify-center py-20 bg-mist z-0">
-        <div className="absolute inset-0 z-[-1] bg-[radial-gradient(ellipse_at_30%_20%,rgba(91,164,245,0.1)_0%,transparent_50%),radial-gradient(ellipse_at_70%_80%,rgba(29,95,204,0.05)_0%,transparent_50%)]"></div>
+      <section className="relative min-h-[90vh] flex items-center justify-center py-20 bg-mist z-0 overflow-hidden">
+        <div className="absolute inset-0 z-[-1] bg-[radial-gradient(ellipse_at_30%_20%,rgba(91,164,245,0.1)_0%,transparent_50%),radial-gradient(ellipse_at_70%_80%,rgba(29,95,204,0.05)_0%,transparent_50%)]">
+          <div className="absolute inset-0 opacity-40 bg-[url('/hero-bg-light.svg')] bg-cover bg-center">
+          </div>
+        </div>
         <div className="relative mx-auto max-w-[800px] px-6 text-center">
           <FadeIn direction="up" delay={0.1}>
             <span className="inline-block rounded-full bg-brand/10 px-5 py-2 text-sm font-semibold tracking-wider text-brand mb-8 uppercase">🛡️ Sécurité depuis 2023</span>
