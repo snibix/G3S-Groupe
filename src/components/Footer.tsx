@@ -10,13 +10,11 @@ export default function Footer() {
             <div className="flex items-center justify-center md:justify-start">
               <Link href="/" className="flex items-center gap-3 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-sky">
                 <img
-                  src="/logo/logo-g3s-groupe.jpg"
+                  src="/logo/g3s-groupe.jpg"
                   alt="G3S Groupe Logo"
                   className="h-10 w-auto rounded-md shadow-sm"
                 />
-                <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
-                  G3S-Groupe
-                </span>
+
               </Link>
             </div>
             <p className="text-sm text-mist/80 leading-relaxed">
@@ -99,6 +97,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-center md:items-start">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-mist/50 mb-0.5">Email</span>
+                  <a href="mailto:contact@g3s-protection.fr" className="text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">contact@g3s-securite.fr</a>
                   <a href="mailto:contact@g3s-protection.fr" className="text-sm text-mist hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded inline-block">contact@g3s-protection.fr</a>
                 </div>
               </li>
@@ -130,7 +129,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
             <Link href="/mentions-legales" className="hover:text-mist transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">Mentions Légales</Link>
             <span className="hidden sm:inline">•</span>
-            <Link href="/mentions-legales" className="hover:text-mist transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">Politique de Confidentialité</Link>
+            <Link href="/politique-confidentialite" className="hover:text-mist transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-sky rounded">Politique de Confidentialité</Link>
           </div>
         </div>
       </div>

@@ -1,51 +1,72 @@
 export default function MentionsLegalesPage() {
   return (
     <main>
-      <section className="page-header">
-        <h1 className="page-title">Mentions Légales</h1>
-        <p style={{ color: 'var(--text-muted)' }}>Informations légales et conditions générales d'utilisation.</p>
+      <section className="relative min-h-[40vh] flex flex-col justify-center bg-navy pt-40 pb-20 z-0">
+        <div className="absolute inset-0 z-[-1] bg-[url('/grid.svg')] bg-center opacity-10"></div>
+        <div className="mx-auto w-full max-w-[1200px] px-6 text-center">
+          <span className="inline-block rounded-full bg-brand/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky mb-4">
+            Informations
+          </span>
+          <h1 className="mx-auto max-w-4xl font-display text-4xl md:text-5xl font-bold uppercase text-white mb-6">
+            Mentions Légales
+          </h1>
+          <p className="mx-auto max-w-3xl font-sans text-lg text-mist/80 leading-relaxed">
+            Informations légales relatives à l'éditeur du site et conditions générales d'utilisation.
+          </p>
+        </div>
       </section>
-      <section className="page-content">
-        <div style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ color: 'var(--text-main)', marginBottom: '1rem', fontSize: '1.5rem' }}>1. Éditeur du site</h2>
-          <p style={{ marginBottom: '0.5rem' }}>Le site <strong>G3S</strong> est édité par la société G3S Sécurité.</p>
-          <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginBottom: '1rem' }}>
-            <li><strong>Forme juridique :</strong> SAS (Société par Actions Simplifiée)</li>
-            <li><strong>Capital social :</strong> 50 000 €</li>
-            <li><strong>Siège social :</strong> 123 Rue de la Paix, 75000 Paris</li>
-            <li><strong>RCS :</strong> Paris B 123 456 789</li>
-            <li><strong>SIRET :</strong> 123 456 789 00012</li>
-            <li><strong>Email de contact :</strong> contact@g3s-securite.fr</li>
-          </ul>
-        </div>
 
-        <div style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ color: 'var(--text-main)', marginBottom: '1rem', fontSize: '1.5rem' }}>2. Directeur de la publication</h2>
-          <p>Le directeur de la publication du site est M. Jean Dupont, en qualité de Président de G3S Sécurité.</p>
-        </div>
+      <section className="bg-light py-20">
+        <div className="mx-auto w-full max-w-[900px] px-6 font-sans text-navy">
+          
+          <div className="mb-10 bg-white p-8 md:p-10 rounded-xl shadow-sm border border-line/10 transition-shadow hover:shadow-md">
+            <h2 className="font-display text-2xl font-bold uppercase text-navy mb-4 border-b border-line/10 pb-4">1. Éditeur du site</h2>
+            <p className="mb-6 text-navy/80 leading-relaxed">Le site <strong>G3S</strong> est édité par la société G3S-Groupe.</p>
+            <ul className="space-y-3 text-navy/80">
+              <li className="flex items-start gap-3">
+                <span className="text-brand font-bold mt-1">•</span>
+                <div><strong>Siège social :</strong> 2 Rue des Charrons, 57600 Forbach</div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand font-bold mt-1">•</span>
+                <div><strong>Email de contact :</strong> contact@g3s-protection.fr</div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand font-bold mt-1">•</span>
+                <div><strong>Téléphone :</strong> 06 86 09 94 24</div>
+              </li>
+            </ul>
+          </div>
 
-        <div style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ color: 'var(--text-main)', marginBottom: '1rem', fontSize: '1.5rem' }}>3. Hébergement</h2>
-          <p style={{ marginBottom: '0.5rem' }}>Ce site est hébergé par :</p>
-          <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
-            <li><strong>Nom de l'hébergeur :</strong> Vercel Inc.</li>
-            <li><strong>Adresse :</strong> 340 S Lemon Ave #4133 Walnut, CA 91789</li>
-            <li><strong>Téléphone :</strong> +1 (555) 123-4567</li>
-          </ul>
-        </div>
+          <div className="mb-10 bg-white p-8 md:p-10 rounded-xl shadow-sm border border-line/10 transition-shadow hover:shadow-md">
+            <h2 className="font-display text-2xl font-bold uppercase text-navy mb-4 border-b border-line/10 pb-4">2. Hébergement</h2>
+            <p className="mb-6 text-navy/80 leading-relaxed">Ce site est hébergé par :</p>
+            <ul className="space-y-3 text-navy/80">
+              <li className="flex items-start gap-3">
+                <span className="text-brand font-bold mt-1">•</span>
+                <div><strong>Nom de l'hébergeur :</strong> Vercel Inc.</div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand font-bold mt-1">•</span>
+                <div><strong>Adresse :</strong> 340 S Lemon Ave #4133 Walnut, CA 91789, USA</div>
+              </li>
+            </ul>
+          </div>
 
-        <div style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ color: 'var(--text-main)', marginBottom: '1rem', fontSize: '1.5rem' }}>4. Propriété intellectuelle</h2>
-          <p>
-            L'ensemble des éléments figurant sur ce site (textes, images, logos, charte graphique) sont protégés par les dispositions du Code de la propriété intellectuelle. Toute reproduction, totale ou partielle, est strictement interdite sans l'accord exprès de G3S Sécurité.
-          </p>
-        </div>
+          <div className="mb-10 bg-white p-8 md:p-10 rounded-xl shadow-sm border border-line/10 transition-shadow hover:shadow-md">
+            <h2 className="font-display text-2xl font-bold uppercase text-navy mb-4 border-b border-line/10 pb-4">3. Conception et développement</h2>
+            <p className="text-navy/80 leading-relaxed">
+              Le site a été conçu et développé par <strong>JD-Web-Studio</strong>.
+            </p>
+          </div>
 
-        <div style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ color: 'var(--text-main)', marginBottom: '1rem', fontSize: '1.5rem' }}>5. Données personnelles</h2>
-          <p>
-            Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Vous pouvez exercer ce droit en nous contactant à l'adresse email mentionnée ci-dessus.
-          </p>
+          <div className="mb-10 bg-white p-8 md:p-10 rounded-xl shadow-sm border border-line/10 transition-shadow hover:shadow-md">
+            <h2 className="font-display text-2xl font-bold uppercase text-navy mb-4 border-b border-line/10 pb-4">4. Propriété intellectuelle</h2>
+            <p className="text-navy/80 leading-relaxed">
+              L'ensemble des éléments figurant sur ce site (textes, images, logos, charte graphique) sont protégés par les dispositions du Code de la propriété intellectuelle. Toute reproduction, totale ou partielle, est strictement interdite sans l'accord exprès de G3S-Groupe.
+            </p>
+          </div>
+
         </div>
       </section>
     </main>
