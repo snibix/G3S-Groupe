@@ -83,9 +83,15 @@ export default function ExpertisesPage() {
                 <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-base sm:text-xl font-bold text-brand">01</span>
                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Sécurité Électronique</h2>
               </div>
-              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
-                <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
-                <span className="font-sans font-bold text-navy text-[10px] sm:text-sm text-center">5 sur 5 Sécurité</span>
+              <div className="flex flex-row items-center gap-4 shrink-0 pb-1">
+                <div className="flex flex-col items-center gap-1">
+                  <img src="/logo/security-sans-fond.png" alt="G3S Security" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                  <span className="font-sans font-bold text-navy text-[10px] sm:text-sm text-center">5 sur 5 Sécurité</span>
+                </div>
+
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -152,7 +158,7 @@ export default function ExpertisesPage() {
                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Sécurité Privée</h2>
               </div>
               <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
-                <img src="/logo/security-sans-fond.png" alt="G3S Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <img src="/logo/protection.jpeg" alt="G3S Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -248,7 +254,7 @@ export default function ExpertisesPage() {
                 <span className="hidden sm:inline-block self-center rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
               <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
-                <img src="/logo/protection.jpeg" alt="G3S Close Protection" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <img src="/logo/close-protection.png" alt="G3S Close Protection" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
               </div>
               <div className="w-full sm:hidden">
                 <span className="inline-block rounded bg-mist px-2 py-0.5 text-[10px] font-bold uppercase text-muted border border-line">Prochainement</span>
