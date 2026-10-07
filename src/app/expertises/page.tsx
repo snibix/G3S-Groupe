@@ -152,7 +152,7 @@ export default function ExpertisesPage() {
                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Sécurité Privée</h2>
               </div>
               <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
-                <img src="/logo/security.jpeg" alt="G3S Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <img src="/logo/security-sans-fond.png" alt="G3S Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -305,7 +305,7 @@ export default function ExpertisesPage() {
                 <span className="hidden sm:inline-block self-center rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
               <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
-                <img src="/logo/academy.jpeg" alt="G3S Formation" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <img src="/logo/academy-sans-fond.png" alt="G3S Formation" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
               </div>
               <div className="w-full sm:hidden">
                 <span className="inline-block rounded bg-white px-2 py-0.5 text-[10px] font-bold uppercase text-muted border border-line">Prochainement</span>
