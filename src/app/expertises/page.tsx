@@ -77,14 +77,14 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
-              <div className="flex items-center gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">01</span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Électronique</h2>
+            <div className="flex flex-row items-center justify-between gap-2 sm:gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-2 sm:gap-4">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-base sm:text-xl font-bold text-brand">01</span>
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Sécurité Électronique</h2>
               </div>
-              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
-                <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-                <span className="font-sans font-bold text-navy text-sm text-center">5 sur 5 Sécurité</span>
+              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
+                <img src="/5sur5.jpeg" alt="5 sur 5 Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-[10px] sm:text-sm text-center">5 sur 5 Sécurité</span>
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -145,14 +145,13 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content (First on Desktop via order) */}
           <FadeIn direction="right" delay={0.2} className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
-              <div className="flex items-center gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">02</span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Sécurité Privée</h2>
+            <div className="flex flex-row items-center justify-between gap-2 sm:gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-2 sm:gap-4">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-base sm:text-xl font-bold text-navy">02</span>
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Sécurité Privée</h2>
               </div>
-              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
-                <img src="/logo/security.jpeg" alt="G3S Sécurité" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-
+              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
+                <img src="/logo/security.jpeg" alt="G3S Sécurité" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -239,17 +238,17 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="flex items-center gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-sky/10 font-display text-xl font-bold text-sky">03</span>
-                  <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Protection Rapprochée</h2>
-                </div>
-                <span className="inline-block self-start sm:self-auto rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
+            <div className="flex flex-row flex-wrap items-center justify-between gap-2 sm:gap-4 border-b-2 border-line pb-4">
+              <div className="flex flex-row items-center gap-2 sm:gap-4 flex-1">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-sky/10 font-display text-base sm:text-xl font-bold text-sky">03</span>
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Protection Rapprochée</h2>
+                <span className="hidden sm:inline-block self-center rounded bg-mist px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
-              <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
-                <img src="/logo/protection.jpeg" alt="G3S Close Protection" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-
+              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
+                <img src="/logo/protection.jpeg" alt="G3S Close Protection" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+              </div>
+              <div className="w-full sm:hidden">
+                <span className="inline-block rounded bg-mist px-2 py-0.5 text-[10px] font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -296,16 +295,17 @@ export default function ExpertisesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content */}
           <FadeIn direction="right" delay={0.2} className="lg:col-span-7 flex flex-col gap-6 lg:order-1 order-2">
-            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b-2 border-line pb-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="flex items-center gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-xl font-bold text-navy">04</span>
-                  <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Formation Professionnelle</h2>
-                </div>
-                <span className="inline-block self-start sm:self-auto rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
+            <div className="flex flex-row flex-wrap items-center justify-between gap-2 sm:gap-4 border-b-2 border-line pb-4">
+              <div className="flex flex-row items-center gap-2 sm:gap-4 flex-1">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-navy/10 font-display text-base sm:text-xl font-bold text-navy">04</span>
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Formation Professionnelle</h2>
+                <span className="hidden sm:inline-block self-center rounded bg-white px-2.5 py-1 text-xs font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
-              <div className="flex flex-col items-center gap-1 self-start xl:self-auto pb-1">
-                <img src="/logo/academy.jpeg" alt="G3S Formation" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
+              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
+                <img src="/logo/academy.jpeg" alt="G3S Formation" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+              </div>
+              <div className="w-full sm:hidden">
+                <span className="inline-block rounded bg-white px-2 py-0.5 text-[10px] font-bold uppercase text-muted border border-line">Prochainement</span>
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
@@ -378,14 +378,14 @@ export default function ExpertisesPage() {
 
           {/* Content */}
           <FadeIn direction="left" delay={0.3} className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-line pb-4">
-              <div className="flex items-center gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-xl font-bold text-brand">05</span>
-                <h2 className="font-display text-3xl md:text-4xl font-bold uppercase text-navy">Solutions Numériques</h2>
+            <div className="flex flex-row items-center justify-between gap-2 sm:gap-4 border-b-2 border-line pb-4">
+              <div className="flex items-center gap-2 sm:gap-4">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-brand/10 font-display text-base sm:text-xl font-bold text-brand">05</span>
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-navy leading-tight">Solutions Numériques</h2>
               </div>
-              <div className="flex flex-col items-center gap-1 self-start sm:self-auto pb-1">
-                <img src="/logo/jdw.jpg" alt="JD Web Studio" className="h-12 sm:h-16 w-auto max-w-[180px] object-contain mix-blend-multiply" />
-                <span className="font-sans font-bold text-navy text-sm text-center">JD Web Studio</span>
+              <div className="flex flex-col items-center gap-1 shrink-0 pb-1">
+                <img src="/logo/jdw.jpg" alt="JD Web Studio" className="h-10 sm:h-16 w-auto max-w-[110px] sm:max-w-[180px] object-contain mix-blend-multiply" />
+                <span className="font-sans font-bold text-navy text-[10px] sm:text-sm text-center">JD Web Studio</span>
               </div>
             </div>
             <p className="font-sans text-lg text-muted mb-4">
